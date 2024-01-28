@@ -1,0 +1,69 @@
+/* plus button styling */
+
+.rotatingImage {
+    transition: transform 0.5s;
+    cursor: pointer;
+    width: 40px;
+}
+
+.language_container {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.plus_icon {
+    position: absolute;
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: -50px;
+    background-color: transparent;
+}
+
+.language-dropdown ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.language-dropdown li {
+    padding: 10px 10px 0px 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.language-dropdown li span img {
+    cursor: pointer;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+}
